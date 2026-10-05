@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paper Desk · 1H three-candle short</title>
+<style>
+:root{--bg:#0f1420;--panel:#171e2e;--ink:#e6ebf5;--muted:#8b96ad;--line:#26304a;--up:#2fbf71;--down:#ef5a6f;--warn:#e2a100;--accent:#7b8cff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;padding:20px}
+h1{font-size:20px;margin:0}h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 10px}
+.top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;border:1px solid var(--line);color:var(--muted)}
+.badge.paper{border-color:var(--warn);color:var(--warn)}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));margin-bottom:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
+.k{color:var(--muted);font-size:12px}.v{font-size:22px;font-weight:600;margin-top:4px;font-variant-numeric:tabular-nums}
+.up{color:var(--up)}.down{color:var(--down)}.warn{color:var(--warn)}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}th,td{text-align:right;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}th{color:var(--muted);font-weight:500;font-size:12px}
+.section{margin-bottom:12px;overflow-x:auto}
+pre{margin:0;font-size:11.5px;color:var(--muted);white-space:pre-wrap;word-break:break-all;max-height:320px;overflow:auto}
+.gate td:last-child{font-weight:600}.empty{color:var(--muted);padding:8px 0}
+footer{color:var(--muted);font-size:12px;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="top">
+  <div><h1>Paper Desk</h1><div class="k" id="sub">1H three-candle short · short-only USDT perps</div></div>
+  <div><span class="badge paper">PAPER ONLY · no key · no live orders</span> <span class="badge" id="fresh">loading…</span></div>
+</div>
+<div class="grid" id="kpis"></div>
+<div class="card section"><h2>Open shorts</h2><div id="open"></div></div>
+<div class="card section"><h2>Auditor gate (locked)</h2><div id="gate"></div></div>
+<div class="card section"><h2>Closed trades</h2><div id="closed"></div></div>
+<div class="card section"><h2>Runner log (last_run.txt tail)</h2><pre id="log"></pre></div>
+<footer id="foot"></footer>
+<script>
+const f=(x,d=2)=>x==null||isNaN(x)?"–":Number(x).toLocaleString(undefined,{minimumFractionDigits:d,maximumFractionDigits:d});
+const sgn=x=>x==null?"":(x>0?"up":(x<0?"down":""));
+const usd=(x,d=4)=>x==null?"–":(x<0?"-$":"$")+f(Math.abs(x),d);
+const pct=x=>x==null?"–":(x*100).toFixed(1)+"%";
+const ago=t=>{if(!t)return"never";const m=(Date.now()-Date.parse(t))/60000;return m<1?"just now":m<90?Math.round(m)+" min ago":(m/60).toFixed(1)+" h ago"};
+function kpi(k,v,c=""){return `<div class="card"><div class="k">${k}</div><div class="v ${c}">${v}</div></div>`}
+async function load(){
+  let s;
+  try{const r=await fetch("state.json?t="+Date.now(),{cache:"no-store"});s=await r.json()}catch(e){document.getElementById("fresh").textContent="state.json unavailable";return}
+  const a=s.account,au=s.audit;
+  const stale=s.last_run_at&&(Date.now()-Date.parse(s.last_run_at))>90*60000;
+  const fr=document.getElementById("fresh");fr.textContent="runner "+ago(s.last_run_at)+" · snapshot "+ago(s.generated_at);fr.className="badge"+(stale?" warn":"");
+  document.getElementById("sub").textContent=`${s.rules.timeframe} three-candle short · ${s.rules.direction} · universe ${s.rules.universe.join(", ")} · exits ${s.rules.exit_rules} · ${s.rules.feed}`;
+  document.getElementById("kpis").innerHTML=
+    kpi("Cash (realized)",usd(a.cash_usd))+
+    kpi("Equity (mark)",usd(a.equity_usd),sgn(a.equity_usd-a.start_usd))+
+    kpi("Unrealized",usd(a.unreal_usd),sgn(a.unreal_usd))+
+    kpi("Fees+slip paid",usd(a.fees_paid_usd))+
+    kpi("Net R (closed)",f(au.net_r,2)+"R",sgn(au.net_r))+
+    kpi("Trades",`${au.trades} / ${au.gate.trades}`)+
+    kpi("Open shorts",s.open.length);
+  document.getElementById("open").innerHTML=s.open.length?`<table><tr><th>Coin</th><th>Entry</th><th>Last</th><th>Stop</th><th>Anchor</th><th>Unreal $</th><th>Unreal R</th><th>Fee+slip</th><th>Held</th><th>Since</th></tr>`+
+    s.open.map(o=>`<tr><td>${o.coin}${o.stale?' <span class="warn">STALE</span>':''}</td><td>${f(o.entry,1)}</td><td>${f(o.last_price,1)}</td><td>${f(o.stop,1)}</td><td>${o.anchor==null?"pending":f(o.anchor,1)}</td><td class="${sgn(o.unreal_usd)}">${f(o.unreal_usd,4)}</td><td class="${sgn(o.unreal_r)}">${f(o.unreal_r,2)}</td><td>${f((o.entry_fee||0)+(o.entry_slip||0),4)}</td><td>${f(o.held_hours,1)}h</td><td>${o.trigger}</td></tr>`).join("")+`</table>`:`<div class="empty">Flat. Waiting for a qualifying 1H three-candle short.</div>`;
+  const g=au.gate,c=au.checks,ok=b=>b?'<span class="up">PASS</span>':'<span class="down">not yet</span>';
+  document.getElementById("gate").innerHTML=`<table class="gate"><tr><th>Criterion</th><th>Required</th><th>Current</th><th>Status</th></tr>
+   <tr><td>Trades</td><td>≥ ${g.trades}</td><td>${au.trades}</td><td>${ok(c.trades)}</td></tr>
+   <tr><td>Win rate</td><td>≥ ${pct(g.win_rate)}</td><td>${pct(au.win_rate)}</td><td>${ok(c.win_rate)}</td></tr>
+   <tr><td>Expectancy</td><td>≥ +${g.expectancy_r}R</td><td>${au.expectancy_r==null?"–":f(au.expectancy_r,2)+"R"}</td><td>${ok(c.expectancy_r)}</td></tr>
+   <tr><td>Max drawdown</td><td>≤ ${pct(g.max_dd)}</td><td>${pct(au.max_dd)}</td><td>${ok(c.max_dd)}</td></tr>
+   <tr><td>Verdict</td><td></td><td></td><td class="${au.verdict==="GO"?"up":"warn"}">${au.verdict}</td></tr></table>`;
+  document.getElementById("closed").innerHTML=s.closed.length?`<table><tr><th>Coin</th><th>Entry time</th><th>Entry</th><th>Exit</th><th>Exit</th><th>Fee+slip</th><th>Net $</th><th>R</th></tr>`+
+    s.closed.slice().reverse().map(t=>`<tr><td>${t.coin}</td><td>${t.trigger}</td><td>${f(t.entry,1)}</td><td>${f(t.exit,1)}</td><td>${t.decision}</td><td>${f((t.fee||0)+(t.slip||0),4)}</td><td class="${sgn(t.net_usd)}">${f(t.net_usd,4)}</td><td class="${sgn(t.r)}">${f(t.r,2)}</td></tr>`).join("")+`</table>`:`<div class="empty">No closed paper trades yet. Nothing is invented.</div>`;
+  document.getElementById("log").textContent=s.last_run_tail.slice().reverse().join("\n");
+  document.getElementById("foot").textContent=`Snapshot ${s.generated_at} · ${s.mode} · source /workspace/desk-rules (journal.csv + last_run.txt)`;
+}
+load();setInterval(load,30000);
+</script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-05T11:19:48Z",
+ "mode": "PAPER ONLY - no exchange key, no live orders",
+ "rules": {
+  "timeframe": "1H",
+  "direction": "short-only USDT perps",
+  "risk_pct": 1.0,
+  "exit_rules": "v2",
+  "universe": [
+   "BTCUSDT"
+  ],
+  "feed": "OKX public /api/v5/market/candles"
+ },
+ "account": {
+  "start_usd": 25.0,
+  "cash_usd": 25.0,
+  "equity_usd": 24.966830987102313,
+  "unreal_usd": -0.033169012897686104,
+  "fees_paid_usd": 0.0125,
+  "fees_closed_usd": 0,
+  "fees_open_usd": 0.0125
+ },
+ "prices": {
+  "BTCUSDT": {
+   "price": 86066.8,
+   "candle_open": "2026-10-05T10:00:00Z",
+   "confirmed": false,
+   "fetched_at": "2026-10-05T10:47:50Z"
+  }
+ },
+ "open": [
+  {
+   "coin": "BTCUSDT",
+   "side": "short",
+   "entry": 86038.7,
+   "trigger": "2026-10-05T03:59:59Z",
+   "stop": 86899.087,
+   "anchor": 86963.7,
+   "risk_usd": 0.25,
+   "notional_usd": 25.0,
+   "entry_fee": 0.01,
+   "entry_slip": 0.0025,
+   "last_price": 86066.8,
+   "unreal_usd": -0.033169012897686104,
+   "unreal_r": -0.13267605159074441,
+   "held_hours": 7.330479095255534,
+   "stale": false,
+   "exit_rules": "v2",
+   "checked": "2026-10-05T09:59:59Z"
+  }
+ ],
+ "closed": [],
+ "audit": {
+  "trades": 0,
+  "wins": 0,
+  "losses": 0,
+  "win_rate": null,
+  "expectancy_r": null,
+  "net_r": 0,
+  "net_usd": 0,
+  "max_dd": 0.0,
+  "equity_curve": [
+   25.0
+  ],
+  "gate": {
+   "trades": 40,
+   "win_rate": 0.33,
+   "expectancy_r": 0.4,
+   "max_dd": 0.2
+  },
+  "checks": {
+   "trades": false,
+   "win_rate": false,
+   "expectancy_r": false,
+   "max_dd": true
+  },
+  "verdict": "COLLECTING"
+ },
+ "last_run_at": "2026-10-05T10:47:50Z",
+ "last_run_tail": [
+  "2026-10-05T01:54:01Z no trade: C1 did not close down (closed=4 instId=BTC-USDT-SWAP http=200)",
+  "2026-10-05T02:17:09Z no trade: C1 did not close down (closed=4 instId=BTC-USDT-SWAP http=200)",
+  "2026-10-05T02:53:29Z no trade: C1 did not close down (closed=4 instId=BTC-USDT-SWAP http=200)",
+  "2026-10-05T03:22:09Z no trade: C1 did not close down (closed=4 instId=BTC-USDT-SWAP http=200)",
+  "2026-10-05T03:51:16Z no trade: C1 did not close down (closed=4 instId=BTC-USDT-SWAP http=200)",
+  "2026-10-05T04:18:09Z opened paper short symbol=BTCUSDT instId=BTC-USDT-SWAP entry=86038.7 fee_usd=0.01 slip_usd=0.0025 risk_usd=0.25 notional_usd=25 source=https://www.okx.com/api/v5/market/candles?instId=BTC-USDT-SWAP&bar=1H&limit=5 http=200",
+  "2026-10-05T04:51:31Z opened paper short symbol=BTCUSDT instId=BTC-USDT-SWAP entry=86038.7 fee_usd=0.01 slip_usd=0.0025 risk_usd=0.25 notional_usd=25 source=https://www.okx.com/api/v5/market/candles?instId=BTC-USDT-SWAP&bar=1H&limit=5 http=200",
+  "2026-10-05T04:51:40Z note: removed duplicate journal row from the 04:51 run (same 03:59:59Z candle signal already opened at 04:18); backup journal.csv.bak-20261005T0451",
+  "2026-10-05T04:52:57Z HOLD coin=BTCUSDT price=86038.7 entry=86038.7 stop=86899.087 fee=0.01 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
+  "2026-10-05T05:21:12Z HOLD coin=BTCUSDT price=85500.1 entry=86038.7 stop=86899.087 fee=0.01 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
+  "2026-10-05T05:48:04Z HOLD coin=BTCUSDT price=85500.1 entry=86038.7 stop=86899.087 fee=0.01 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
+  "2026-10-05T06:25:05Z HOLD coin=BTCUSDT price=85725.8 entry=86038.7 stop=86899.087 fee=0.01 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
+  "2026-10-05T06:51:25Z HOLD coin=BTCUSDT price=85725.8 entry=86038.7 stop=86899.087 fee=0.01 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
+  "2026-10-05T07:19:01Z HOLD coin=BTCUSDT price=86217.4 entry=86038.7 stop=86899.087 fee=0.01 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
+  "2026-10-05T07:55:12Z HOLD coin=BTCUSDT price=86217.4 entry=86038.7 stop=86899.087 fee=0.01 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
+  "2026-10-05T08:17:31Z NO_TRADE coin=BTCUSDT reason=HTTP_429_stop http=429",
+  "2026-10-05T08:19:57Z HOLD coin=BTCUSDT price=86217.4 entry=86038.7 stop=86899.087 fee=0.01 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
+  "2026-10-05T08:26:56Z note: exit_rules v2 (trailing anchor + bullish-flip take-profit, see RULE_GAPS.md) adopted on open BTCUSDT row from candle 2026-10-05T08:00:00Z on; earlier candles keep v1 (stop + anchor close) to avoid hindsight; backup journal.csv.bak-20261005T0825",
+  "2026-10-05T08:26:58Z ANCHOR_BACKFILL anchor=86963.7 from C1 2026-10-05T01:00:00Z coin=BTCUSDT",
+  "2026-10-05T08:26:58Z HOLD coin=BTCUSDT price=86220.9 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=-0.077968 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
+  "2026-10-05T08:54:41Z HOLD coin=BTCUSDT price=86220.9 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=-0.077968 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
+  "2026-10-05T09:20:11Z HOLD coin=BTCUSDT price=86192.4 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=-0.069682 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
+  "2026-10-05T09:48:16Z HOLD coin=BTCUSDT price=86192.4 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=-0.069682 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
+  "2026-10-05T10:23:19Z HOLD coin=BTCUSDT price=85947.3 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=0.001571 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
+  "2026-10-05T10:47:50Z HOLD coin=BTCUSDT price=85947.3 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=0.001571 trigger=2026-10-05T03:59:59Z open_rows=1 http=200"
+ ]
+}
