@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-05T15:29:42Z",
+ "generated_at": "2026-10-05T15:55:55Z",
  "mode": "PAPER ONLY - no exchange key, no live orders",
  "rules": {
   "timeframe": "1H",
@@ -16,30 +16,30 @@
  "account": {
   "start_usd": 25.0,
   "cash_usd": 25.0,
-  "equity_usd": 25.13654877107627,
-  "unreal_usd": 0.13654877107627064,
+  "equity_usd": 25.215273635584918,
+  "unreal_usd": 0.21527363558491702,
   "fees_paid_usd": 0.0125,
   "fees_closed_usd": 0,
   "fees_open_usd": 0.0125
  },
  "prices": {
   "BTCUSDT": {
-   "price": 85483.0,
+   "price": 85212.2,
    "candle_open": "2026-10-05T15:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-05T15:29:24Z"
+   "fetched_at": "2026-10-05T15:55:43Z"
   },
   "ETHUSDT": {
-   "price": 2702.99,
+   "price": 2695.75,
    "candle_open": "2026-10-05T15:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-05T15:29:27Z"
+   "fetched_at": "2026-10-05T15:55:47Z"
   },
   "SOLUSDT": {
-   "price": 119.6,
+   "price": 119.23,
    "candle_open": "2026-10-05T15:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-05T15:29:32Z"
+   "fetched_at": "2026-10-05T15:55:50Z"
   }
  },
  "open": [
@@ -54,10 +54,10 @@
    "notional_usd": 25.0,
    "entry_fee": 0.01,
    "entry_slip": 0.0025,
-   "last_price": 85483.0,
-   "unreal_usd": 0.13654877107627064,
-   "unreal_r": 0.5461950843050826,
-   "held_hours": 11.495318857489691,
+   "last_price": 85212.2,
+   "unreal_usd": 0.21527363558491702,
+   "unreal_r": 0.8610945423396681,
+   "held_hours": 11.932436687486437,
    "stale": false,
    "exit_rules": "v2",
    "checked": "2026-10-05T14:59:59Z"
@@ -90,11 +90,8 @@
   },
   "verdict": "COLLECTING"
  },
- "last_run_at": "2026-10-05T15:29:32Z",
+ "last_run_at": "2026-10-05T15:55:50Z",
  "last_run_tail": [
-  "2026-10-05T11:25:08Z HOLD coin=BTCUSDT price=86076.3 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=-0.035931 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
-  "2026-10-05T11:25:47Z HOLD coin=BTCUSDT price=86076.3 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=-0.035931 trigger=2026-10-05T03:59:59Z open_rows=1 open_total=1 http=200",
-  "2026-10-05T11:25:50Z NO_TRADE coin=ETHUSDT price=2716.46 reason=C3_body_did_not_close_below_the_C2_close closed=99 http=200",
   "2026-10-05T11:25:53Z NO_TRADE coin=SOLUSDT price=120.63 reason=C3_body_did_not_close_below_the_C2_close closed=99 http=200",
   "2026-10-05T11:49:21Z HOLD coin=BTCUSDT price=86076.3 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=-0.035931 trigger=2026-10-05T03:59:59Z open_rows=1 open_total=1 http=200",
   "2026-10-05T11:49:24Z NO_TRADE coin=ETHUSDT price=2716.46 reason=C3_body_did_not_close_below_the_C2_close closed=99 http=200",
@@ -116,6 +113,9 @@
   "2026-10-05T14:27:13Z NO_TRADE coin=SOLUSDT reason=HTTP_429_stop backoff_s=6.0 http=429",
   "2026-10-05T15:29:24Z HOLD coin=BTCUSDT price=85600.9 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=0.102274 trigger=2026-10-05T03:59:59Z open_rows=1 open_total=1 http=200",
   "2026-10-05T15:29:27Z NO_TRADE coin=ETHUSDT price=2702.82 reason=C2_did_not_close_below_the_C1_close closed=99 http=200",
-  "2026-10-05T15:29:32Z NO_TRADE coin=SOLUSDT price=119.44 reason=C2_did_not_close_below_the_C1_close closed=99 http=200"
+  "2026-10-05T15:29:32Z NO_TRADE coin=SOLUSDT price=119.44 reason=C2_did_not_close_below_the_C1_close closed=99 http=200",
+  "2026-10-05T15:55:43Z HOLD coin=BTCUSDT price=85600.9 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=0.102274 trigger=2026-10-05T03:59:59Z open_rows=1 open_total=1 http=200",
+  "2026-10-05T15:55:47Z NO_TRADE coin=ETHUSDT price=2702.82 reason=C2_did_not_close_below_the_C1_close closed=99 http=200",
+  "2026-10-05T15:55:50Z NO_TRADE coin=SOLUSDT price=119.44 reason=C2_did_not_close_below_the_C1_close closed=99 http=200"
  ]
 }
