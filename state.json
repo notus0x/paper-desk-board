@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-05T14:27:26Z",
+ "generated_at": "2026-10-05T14:57:48Z",
  "mode": "PAPER ONLY - no exchange key, no live orders",
  "rules": {
   "timeframe": "1H",
@@ -57,7 +57,7 @@
    "last_price": 86300.1,
    "unreal_usd": -0.10099216980266111,
    "unreal_r": -0.40396867921064444,
-   "held_hours": 10.457718301662869,
+   "held_hours": 10.963764542507596,
    "stale": false,
    "exit_rules": "v2",
    "checked": "2026-10-05T13:59:59Z"
