@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-05T14:57:48Z",
+ "generated_at": "2026-10-05T15:29:42Z",
  "mode": "PAPER ONLY - no exchange key, no live orders",
  "rules": {
   "timeframe": "1H",
@@ -16,30 +16,30 @@
  "account": {
   "start_usd": 25.0,
   "cash_usd": 25.0,
-  "equity_usd": 24.899007830197338,
-  "unreal_usd": -0.10099216980266111,
+  "equity_usd": 25.13654877107627,
+  "unreal_usd": 0.13654877107627064,
   "fees_paid_usd": 0.0125,
   "fees_closed_usd": 0,
   "fees_open_usd": 0.0125
  },
  "prices": {
   "BTCUSDT": {
-   "price": 86300.1,
-   "candle_open": "2026-10-05T14:00:00Z",
+   "price": 85483.0,
+   "candle_open": "2026-10-05T15:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-05T14:27:06Z"
+   "fetched_at": "2026-10-05T15:29:24Z"
   },
   "ETHUSDT": {
-   "price": 2718.31,
-   "candle_open": "2026-10-05T14:00:00Z",
+   "price": 2702.99,
+   "candle_open": "2026-10-05T15:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-05T14:27:10Z"
+   "fetched_at": "2026-10-05T15:29:27Z"
   },
   "SOLUSDT": {
-   "price": 120.65,
-   "candle_open": "2026-10-05T14:00:00Z",
+   "price": 119.6,
+   "candle_open": "2026-10-05T15:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-05T14:05:51Z"
+   "fetched_at": "2026-10-05T15:29:32Z"
   }
  },
  "open": [
@@ -54,13 +54,13 @@
    "notional_usd": 25.0,
    "entry_fee": 0.01,
    "entry_slip": 0.0025,
-   "last_price": 86300.1,
-   "unreal_usd": -0.10099216980266111,
-   "unreal_r": -0.40396867921064444,
-   "held_hours": 10.963764542507596,
+   "last_price": 85483.0,
+   "unreal_usd": 0.13654877107627064,
+   "unreal_r": 0.5461950843050826,
+   "held_hours": 11.495318857489691,
    "stale": false,
    "exit_rules": "v2",
-   "checked": "2026-10-05T13:59:59Z"
+   "checked": "2026-10-05T14:59:59Z"
   }
  ],
  "closed": [],
@@ -90,11 +90,8 @@
   },
   "verdict": "COLLECTING"
  },
- "last_run_at": "2026-10-05T14:27:13Z",
+ "last_run_at": "2026-10-05T15:29:32Z",
  "last_run_tail": [
-  "2026-10-05T09:48:16Z HOLD coin=BTCUSDT price=86192.4 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=-0.069682 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
-  "2026-10-05T10:23:19Z HOLD coin=BTCUSDT price=85947.3 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=0.001571 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
-  "2026-10-05T10:47:50Z HOLD coin=BTCUSDT price=85947.3 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=0.001571 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
   "2026-10-05T11:25:08Z HOLD coin=BTCUSDT price=86076.3 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=-0.035931 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
   "2026-10-05T11:25:47Z HOLD coin=BTCUSDT price=86076.3 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=-0.035931 trigger=2026-10-05T03:59:59Z open_rows=1 open_total=1 http=200",
   "2026-10-05T11:25:50Z NO_TRADE coin=ETHUSDT price=2716.46 reason=C3_body_did_not_close_below_the_C2_close closed=99 http=200",
@@ -116,6 +113,9 @@
   "2026-10-05T14:05:51Z NO_TRADE coin=SOLUSDT price=120.71 reason=C1_did_not_close_down closed=99 http=200",
   "2026-10-05T14:27:06Z HOLD coin=BTCUSDT price=86383.4 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=-0.125208 trigger=2026-10-05T03:59:59Z open_rows=1 open_total=1 http=200",
   "2026-10-05T14:27:10Z NO_TRADE coin=ETHUSDT price=2721.27 reason=C1_did_not_close_down closed=99 http=200",
-  "2026-10-05T14:27:13Z NO_TRADE coin=SOLUSDT reason=HTTP_429_stop backoff_s=6.0 http=429"
+  "2026-10-05T14:27:13Z NO_TRADE coin=SOLUSDT reason=HTTP_429_stop backoff_s=6.0 http=429",
+  "2026-10-05T15:29:24Z HOLD coin=BTCUSDT price=85600.9 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=0.102274 trigger=2026-10-05T03:59:59Z open_rows=1 open_total=1 http=200",
+  "2026-10-05T15:29:27Z NO_TRADE coin=ETHUSDT price=2702.82 reason=C2_did_not_close_below_the_C1_close closed=99 http=200",
+  "2026-10-05T15:29:32Z NO_TRADE coin=SOLUSDT price=119.44 reason=C2_did_not_close_below_the_C1_close closed=99 http=200"
  ]
 }
