@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-05T11:25:59Z",
+ "generated_at": "2026-10-05T11:49:33Z",
  "mode": "PAPER ONLY - no exchange key, no live orders",
  "rules": {
   "timeframe": "1H",
@@ -16,30 +16,30 @@
  "account": {
   "start_usd": 25.0,
   "cash_usd": 25.0,
-  "equity_usd": 24.98639591834837,
-  "unreal_usd": -0.013604081651629704,
+  "equity_usd": 24.974738359017508,
+  "unreal_usd": -0.02526164098249065,
   "fees_paid_usd": 0.0125,
   "fees_closed_usd": 0,
   "fees_open_usd": 0.0125
  },
  "prices": {
   "BTCUSDT": {
-   "price": 85999.5,
+   "price": 86039.6,
    "candle_open": "2026-10-05T11:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-05T11:25:47Z"
+   "fetched_at": "2026-10-05T11:49:21Z"
   },
   "ETHUSDT": {
-   "price": 2714.79,
+   "price": 2715.29,
    "candle_open": "2026-10-05T11:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-05T11:25:50Z"
+   "fetched_at": "2026-10-05T11:49:24Z"
   },
   "SOLUSDT": {
-   "price": 120.71,
+   "price": 120.7,
    "candle_open": "2026-10-05T11:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-05T11:25:53Z"
+   "fetched_at": "2026-10-05T11:49:27Z"
   }
  },
  "open": [
@@ -54,10 +54,10 @@
    "notional_usd": 25.0,
    "entry_fee": 0.01,
    "entry_slip": 0.0025,
-   "last_price": 85999.5,
-   "unreal_usd": -0.013604081651629704,
-   "unreal_r": -0.054416326606518815,
-   "held_hours": 7.433468021714952,
+   "last_price": 86039.6,
+   "unreal_usd": -0.02526164098249065,
+   "unreal_r": -0.1010465639299626,
+   "held_hours": 7.8262691071912975,
    "stale": false,
    "exit_rules": "v2",
    "checked": "2026-10-05T10:59:59Z"
@@ -90,11 +90,8 @@
   },
   "verdict": "COLLECTING"
  },
- "last_run_at": "2026-10-05T11:25:53Z",
+ "last_run_at": "2026-10-05T11:49:27Z",
  "last_run_tail": [
-  "2026-10-05T03:51:16Z no trade: C1 did not close down (closed=4 instId=BTC-USDT-SWAP http=200)",
-  "2026-10-05T04:18:09Z opened paper short symbol=BTCUSDT instId=BTC-USDT-SWAP entry=86038.7 fee_usd=0.01 slip_usd=0.0025 risk_usd=0.25 notional_usd=25 source=https://www.okx.com/api/v5/market/candles?instId=BTC-USDT-SWAP&bar=1H&limit=5 http=200",
-  "2026-10-05T04:51:31Z opened paper short symbol=BTCUSDT instId=BTC-USDT-SWAP entry=86038.7 fee_usd=0.01 slip_usd=0.0025 risk_usd=0.25 notional_usd=25 source=https://www.okx.com/api/v5/market/candles?instId=BTC-USDT-SWAP&bar=1H&limit=5 http=200",
   "2026-10-05T04:51:40Z note: removed duplicate journal row from the 04:51 run (same 03:59:59Z candle signal already opened at 04:18); backup journal.csv.bak-20261005T0451",
   "2026-10-05T04:52:57Z HOLD coin=BTCUSDT price=86038.7 entry=86038.7 stop=86899.087 fee=0.01 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
   "2026-10-05T05:21:12Z HOLD coin=BTCUSDT price=85500.1 entry=86038.7 stop=86899.087 fee=0.01 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
@@ -116,6 +113,9 @@
   "2026-10-05T11:25:08Z HOLD coin=BTCUSDT price=86076.3 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=-0.035931 trigger=2026-10-05T03:59:59Z open_rows=1 http=200",
   "2026-10-05T11:25:47Z HOLD coin=BTCUSDT price=86076.3 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=-0.035931 trigger=2026-10-05T03:59:59Z open_rows=1 open_total=1 http=200",
   "2026-10-05T11:25:50Z NO_TRADE coin=ETHUSDT price=2716.46 reason=C3_body_did_not_close_below_the_C2_close closed=99 http=200",
-  "2026-10-05T11:25:53Z NO_TRADE coin=SOLUSDT price=120.63 reason=C3_body_did_not_close_below_the_C2_close closed=99 http=200"
+  "2026-10-05T11:25:53Z NO_TRADE coin=SOLUSDT price=120.63 reason=C3_body_did_not_close_below_the_C2_close closed=99 http=200",
+  "2026-10-05T11:49:21Z HOLD coin=BTCUSDT price=86076.3 entry=86038.7 stop=86899.087 anchor=86963.7 fee=0.01 unreal_usd=-0.035931 trigger=2026-10-05T03:59:59Z open_rows=1 open_total=1 http=200",
+  "2026-10-05T11:49:24Z NO_TRADE coin=ETHUSDT price=2716.46 reason=C3_body_did_not_close_below_the_C2_close closed=99 http=200",
+  "2026-10-05T11:49:27Z NO_TRADE coin=SOLUSDT price=120.63 reason=C3_body_did_not_close_below_the_C2_close closed=99 http=200"
  ]
 }
