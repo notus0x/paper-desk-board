@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-07T22:25:11Z",
+ "generated_at": "2026-10-07T22:53:05Z",
  "mode": "PAPER ONLY - no exchange key, no live orders",
  "rules": {
   "timeframe": "1H",
@@ -16,30 +16,30 @@
  "account": {
   "start_usd": 25.0,
   "cash_usd": 25.65461129,
-  "equity_usd": 25.738903565663954,
-  "unreal_usd": 0.08429227566395403,
+  "equity_usd": 25.750125996065368,
+  "unreal_usd": 0.09551470606537027,
   "fees_paid_usd": 0.043429020000000006,
   "fees_closed_usd": 0.037154110000000004,
   "fees_open_usd": 0.00627491
  },
  "prices": {
   "BTCUSDT": {
-   "price": 83265.7,
+   "price": 83190.7,
    "candle_open": "2026-10-07T22:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-07T22:25:00Z"
+   "fetched_at": "2026-10-07T22:52:54Z"
   },
   "ETHUSDT": {
-   "price": 2568.43,
+   "price": 2567.84,
    "candle_open": "2026-10-07T22:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-07T22:25:03Z"
+   "fetched_at": "2026-10-07T22:52:58Z"
   },
   "SOLUSDT": {
-   "price": 115.84,
+   "price": 115.87,
    "candle_open": "2026-10-07T22:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-07T22:25:06Z"
+   "fetched_at": "2026-10-07T22:53:01Z"
   }
  },
  "open": [
@@ -54,10 +54,10 @@
    "notional_usd": 12.54981416,
    "entry_fee": 0.00501993,
    "entry_slip": 0.00125498,
-   "last_price": 83265.7,
-   "unreal_usd": 0.08429227566395403,
-   "unreal_r": 0.3358307767109298,
-   "held_hours": 13.420092268066407,
+   "last_price": 83190.7,
+   "unreal_usd": 0.09551470606537027,
+   "unreal_r": 0.3805423174613196,
+   "held_hours": 13.885227888047961,
    "stale": false,
    "exit_rules": "v2",
    "checked": "2026-10-07T21:59:59Z"
@@ -117,11 +117,8 @@
   },
   "verdict": "COLLECTING"
  },
- "last_run_at": "2026-10-07T22:25:06Z",
+ "last_run_at": "2026-10-07T22:53:01Z",
  "last_run_tail": [
-  "2026-10-07T19:20:50Z HOLD coin=BTCUSDT price=83385 entry=83912.9 stop=85591.158 anchor=83726.6 fee=0.00501993 unreal_usd=0.066441 trigger=2026-10-07T08:59:59Z open_rows=1 open_total=2 http=200",
-  "2026-10-07T19:20:53Z HOLD coin=ETHUSDT price=2561.44 entry=2695.04 stop=2748.9408 anchor=2583.55 fee=0.005 unreal_usd=0.607467 trigger=2026-10-05T16:59:59Z open_rows=1 open_total=2 http=200",
-  "2026-10-07T19:20:57Z NO_TRADE coin=SOLUSDT price=116.09 reason=global_slot_full open_total=2 max_open=2 http=200",
   "2026-10-07T19:55:39Z HOLD coin=BTCUSDT price=83385 entry=83912.9 stop=85591.158 anchor=83726.6 fee=0.00501993 unreal_usd=0.066441 trigger=2026-10-07T08:59:59Z open_rows=1 open_total=2 http=200",
   "2026-10-07T19:55:42Z HOLD coin=ETHUSDT price=2561.44 entry=2695.04 stop=2748.9408 anchor=2583.55 fee=0.005 unreal_usd=0.607467 trigger=2026-10-05T16:59:59Z open_rows=1 open_total=2 http=200",
   "2026-10-07T19:55:45Z NO_TRADE coin=SOLUSDT price=116.09 reason=global_slot_full open_total=2 max_open=2 http=200",
@@ -143,6 +140,9 @@
   "2026-10-07T22:07:21Z NO_TRADE coin=SOLUSDT price=115.55 reason=C2_did_not_close_below_the_C1_close closed=99 feed=okx http=200",
   "2026-10-07T22:25:00Z HOLD coin=BTCUSDT price=83120.2 entry=83912.9 stop=85591.158 anchor=83726.6 fee=0.00501993 unreal_usd=0.106064 trigger=2026-10-07T08:59:59Z open_rows=1 open_total=1 feed=okx http=200",
   "2026-10-07T22:25:03Z NO_TRADE coin=ETHUSDT price=2566.38 reason=C1_did_not_close_down closed=99 feed=okx http=200",
-  "2026-10-07T22:25:06Z NO_TRADE coin=SOLUSDT price=115.55 reason=C2_did_not_close_below_the_C1_close closed=99 feed=okx http=200"
+  "2026-10-07T22:25:06Z NO_TRADE coin=SOLUSDT price=115.55 reason=C2_did_not_close_below_the_C1_close closed=99 feed=okx http=200",
+  "2026-10-07T22:52:54Z HOLD coin=BTCUSDT price=83120.2 entry=83912.9 stop=85591.158 anchor=83726.6 fee=0.00501993 unreal_usd=0.106064 trigger=2026-10-07T08:59:59Z open_rows=1 open_total=1 feed=okx http=200",
+  "2026-10-07T22:52:58Z NO_TRADE coin=ETHUSDT price=2566.38 reason=C1_did_not_close_down closed=99 feed=okx http=200",
+  "2026-10-07T22:53:01Z NO_TRADE coin=SOLUSDT price=115.55 reason=C2_did_not_close_below_the_C1_close closed=99 feed=okx http=200"
  ]
 }
