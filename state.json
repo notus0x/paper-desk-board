@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T01:54:25Z",
+ "generated_at": "2026-10-08T02:23:35Z",
  "mode": "PAPER ONLY - no exchange key, no live orders",
  "rules": {
   "timeframe": "1H",
@@ -16,30 +16,30 @@
  "account": {
   "start_usd": 25.0,
   "cash_usd": 25.65461129,
-  "equity_usd": 25.751577430397283,
-  "unreal_usd": 0.09696614039728632,
+  "equity_usd": 25.765972067792166,
+  "unreal_usd": 0.11136077779216912,
   "fees_paid_usd": 0.043429020000000006,
   "fees_closed_usd": 0.037154110000000004,
   "fees_open_usd": 0.00627491
  },
  "prices": {
   "BTCUSDT": {
-   "price": 83181.0,
-   "candle_open": "2026-10-08T01:00:00Z",
+   "price": 83084.8,
+   "candle_open": "2026-10-08T02:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-08T01:54:14Z"
+   "fetched_at": "2026-10-08T02:23:19Z"
   },
   "ETHUSDT": {
-   "price": 2579.78,
-   "candle_open": "2026-10-08T01:00:00Z",
+   "price": 2576.67,
+   "candle_open": "2026-10-08T02:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-08T01:54:17Z"
+   "fetched_at": "2026-10-08T02:23:22Z"
   },
   "SOLUSDT": {
-   "price": 116.15,
-   "candle_open": "2026-10-08T01:00:00Z",
+   "price": 116.39,
+   "candle_open": "2026-10-08T02:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-08T01:54:20Z"
+   "fetched_at": "2026-10-08T02:23:25Z"
   }
  },
  "open": [
@@ -54,13 +54,13 @@
    "notional_usd": 12.54981416,
    "entry_fee": 0.00501993,
    "entry_slip": 0.00125498,
-   "last_price": 83181.0,
-   "unreal_usd": 0.09696614039728632,
-   "unreal_r": 0.3863250100650349,
-   "held_hours": 16.90728999057346,
+   "last_price": 83084.8,
+   "unreal_usd": 0.11136077779216912,
+   "unreal_r": 0.4436750130008664,
+   "held_hours": 17.393521553615994,
    "stale": false,
    "exit_rules": "v2",
-   "checked": "2026-10-08T00:59:59Z"
+   "checked": "2026-10-08T01:59:59Z"
   }
  ],
  "closed": [
@@ -117,11 +117,8 @@
   },
   "verdict": "COLLECTING"
  },
- "last_run_at": "2026-10-08T01:54:20Z",
+ "last_run_at": "2026-10-08T02:23:25Z",
  "last_run_tail": [
-  "2026-10-07T22:07:21Z NO_TRADE coin=SOLUSDT price=115.55 reason=C2_did_not_close_below_the_C1_close closed=99 feed=okx http=200",
-  "2026-10-07T22:25:00Z HOLD coin=BTCUSDT price=83120.2 entry=83912.9 stop=85591.158 anchor=83726.6 fee=0.00501993 unreal_usd=0.106064 trigger=2026-10-07T08:59:59Z open_rows=1 open_total=1 feed=okx http=200",
-  "2026-10-07T22:25:03Z NO_TRADE coin=ETHUSDT price=2566.38 reason=C1_did_not_close_down closed=99 feed=okx http=200",
   "2026-10-07T22:25:06Z NO_TRADE coin=SOLUSDT price=115.55 reason=C2_did_not_close_below_the_C1_close closed=99 feed=okx http=200",
   "2026-10-07T22:52:54Z HOLD coin=BTCUSDT price=83120.2 entry=83912.9 stop=85591.158 anchor=83726.6 fee=0.00501993 unreal_usd=0.106064 trigger=2026-10-07T08:59:59Z open_rows=1 open_total=1 feed=okx http=200",
   "2026-10-07T22:52:58Z NO_TRADE coin=ETHUSDT price=2566.38 reason=C1_did_not_close_down closed=99 feed=okx http=200",
@@ -143,6 +140,9 @@
   "2026-10-08T01:26:21Z NO_TRADE coin=SOLUSDT price=116.34 reason=C1_did_not_close_down closed=99 feed=okx http=200",
   "2026-10-08T01:54:14Z HOLD coin=BTCUSDT price=83336.4 entry=83912.9 stop=85591.158 anchor=83726.6 fee=0.00501993 unreal_usd=0.073713 trigger=2026-10-07T08:59:59Z open_rows=1 open_total=1 feed=okx http=200",
   "2026-10-08T01:54:17Z NO_TRADE coin=ETHUSDT price=2574.39 reason=C1_did_not_close_down closed=99 feed=okx http=200",
-  "2026-10-08T01:54:20Z NO_TRADE coin=SOLUSDT price=116.34 reason=C1_did_not_close_down closed=99 feed=okx http=200"
+  "2026-10-08T01:54:20Z NO_TRADE coin=SOLUSDT price=116.34 reason=C1_did_not_close_down closed=99 feed=okx http=200",
+  "2026-10-08T02:23:19Z HOLD coin=BTCUSDT price=83076.1 entry=83912.9 stop=85591.158 anchor=83726.6 fee=0.00501993 unreal_usd=0.112663 trigger=2026-10-07T08:59:59Z open_rows=1 open_total=1 feed=okx http=200",
+  "2026-10-08T02:23:22Z NO_TRADE coin=ETHUSDT price=2576.87 reason=C1_did_not_close_down closed=99 feed=okx http=200",
+  "2026-10-08T02:23:25Z NO_TRADE coin=SOLUSDT price=116.04 reason=C1_did_not_close_down closed=99 feed=okx http=200"
  ]
 }
