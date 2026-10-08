@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T07:26:53Z",
+ "generated_at": "2026-10-08T07:27:46Z",
  "mode": "PAPER ONLY - no exchange key, no live orders",
  "rules": {
   "timeframe": "1H",
@@ -57,7 +57,7 @@
    "last_price": 83075.3,
    "unreal_usd": 0.11278228564301518,
    "unreal_r": 0.44933847482924916,
-   "held_hours": 22.44859291273329,
+   "held_hours": 22.463204666612413,
    "stale": false,
    "exit_rules": "v2",
    "checked": "2026-10-08T06:59:59Z"
@@ -76,7 +76,7 @@
    "last_price": 2570.04,
    "unreal_usd": -0.06260595786908012,
    "unreal_r": -0.24403393943131751,
-   "held_hours": 1.44859460550944,
+   "held_hours": 1.463206359998915,
    "stale": false,
    "exit_rules": "v2",
    "checked": "2026-10-08T06:59:59Z"
