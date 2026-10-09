@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T04:27:58Z",
+ "generated_at": "2026-10-09T04:49:08Z",
  "mode": "PAPER ONLY - no exchange key, no live orders",
  "rules": {
   "timeframe": "1H",
@@ -24,10 +24,10 @@
  },
  "prices": {
   "BTCUSDT": {
-   "price": 82399.9,
+   "price": 82259.9,
    "candle_open": "2026-10-09T04:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-09T04:27:48Z"
+   "fetched_at": "2026-10-09T04:49:07Z"
   },
   "ETHUSDT": {
    "price": 2492.0,
@@ -136,9 +136,8 @@
   },
   "verdict": "COLLECTING"
  },
- "last_run_at": "2026-10-09T04:27:54Z",
+ "last_run_at": "2026-10-09T04:49:07Z",
  "last_run_tail": [
-  "2026-10-08T18:08:12Z HOLD coin=BTCUSDT price=80718 entry=83912.9 stop=85591.158 anchor=82659.9 fee=0.00501993 unreal_usd=0.465511 trigger=2026-10-07T08:59:59Z open_rows=1 open_total=3 feed=okx http=200",
   "2026-10-08T18:08:15Z HOLD coin=ETHUSDT price=2417.08 entry=2560.11 stop=2611.3122 anchor=2551 fee=0.00513092 unreal_usd=0.704176 trigger=2026-10-08T05:59:59Z open_rows=1 open_total=3 feed=okx http=200",
   "2026-10-08T18:08:18Z ANCHOR_TRAIL 114.4->112.45 setup_c3=2026-10-08T17:59:59Z coin=SOLUSDT feed=okx",
   "2026-10-08T18:08:18Z HOLD coin=SOLUSDT price=106.32 entry=112.45 stop=116.948 anchor=112.45 fee=0.00256546 unreal_usd=0.343389 trigger=2026-10-08T12:59:59Z open_rows=1 open_total=3 feed=okx http=200",
@@ -162,6 +161,7 @@
   "2026-10-09T04:01:13Z NO_TRADE coin=SOLUSDT price=110.36 reason=C1_did_not_close_down closed=99 feed=okx http=200",
   "2026-10-09T04:27:48Z NO_TRADE coin=BTCUSDT price=82382.8 reason=C1_did_not_close_down closed=99 feed=okx http=200",
   "2026-10-09T04:27:51Z NO_TRADE coin=ETHUSDT price=2491.93 reason=C1_did_not_close_down closed=99 feed=okx http=200",
-  "2026-10-09T04:27:54Z NO_TRADE coin=SOLUSDT price=110.36 reason=C1_did_not_close_down closed=99 feed=okx http=200"
+  "2026-10-09T04:27:54Z NO_TRADE coin=SOLUSDT price=110.36 reason=C1_did_not_close_down closed=99 feed=okx http=200",
+  "2026-10-09T04:49:07Z NO_TRADE coin=BTCUSDT price=82382.8 reason=C1_did_not_close_down closed=99 feed=okx http=200"
  ]
 }
