@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T23:22:55Z",
+ "generated_at": "2026-10-09T23:49:55Z",
  "mode": "PAPER ONLY - no exchange key, no live orders",
  "rules": {
   "timeframe": "1H",
@@ -16,30 +16,30 @@
  "account": {
   "start_usd": 25.0,
   "cash_usd": 26.48073681,
-  "equity_usd": 26.44199579214978,
-  "unreal_usd": -0.038741017850220216,
+  "equity_usd": 26.44261093227279,
+  "unreal_usd": -0.038125877727210135,
   "fees_paid_usd": 0.08508452,
   "fees_closed_usd": 0.08177452,
   "fees_open_usd": 0.0033100000000000004
  },
  "prices": {
   "BTCUSDT": {
-   "price": 82617.4,
+   "price": 82643.2,
    "candle_open": "2026-10-09T23:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-09T23:22:48Z"
+   "fetched_at": "2026-10-09T23:49:47Z"
   },
   "ETHUSDT": {
-   "price": 2488.46,
+   "price": 2488.23,
    "candle_open": "2026-10-09T23:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-09T23:22:51Z"
+   "fetched_at": "2026-10-09T23:49:51Z"
   },
   "SOLUSDT": {
-   "price": 109.22,
+   "price": 109.28,
    "candle_open": "2026-10-09T23:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-09T23:22:54Z"
+   "fetched_at": "2026-10-09T23:49:54Z"
   }
  },
  "open": [
@@ -54,10 +54,10 @@
    "notional_usd": 6.62001068,
    "entry_fee": 0.002648,
    "entry_slip": 0.000662,
-   "last_price": 2488.46,
-   "unreal_usd": -0.038741017850220216,
-   "unreal_r": -0.14630269992469505,
-   "held_hours": 3.3824484558105468,
+   "last_price": 2488.23,
+   "unreal_usd": -0.038125877727210135,
+   "unreal_r": -0.14397966697867576,
+   "held_hours": 3.8324446558295358,
    "stale": false,
    "exit_rules": "v2",
    "checked": "2026-10-09T22:59:59Z"
@@ -182,11 +182,8 @@
   },
   "verdict": "COLLECTING"
  },
- "last_run_at": "2026-10-09T23:22:54Z",
+ "last_run_at": "2026-10-09T23:49:54Z",
  "last_run_tail": [
-  "2026-10-09T19:59:21Z NO_TRADE coin=ETHUSDT price=2482.52 reason=C1_did_not_close_down closed=99 feed=okx http=200",
-  "2026-10-09T19:59:24Z NO_TRADE coin=SOLUSDT price=109.44 reason=C1_did_not_close_down closed=99 feed=okx http=200",
-  "2026-10-09T20:30:23Z ANCHOR_TRAIL 82979.5->82747.1 setup_c3=2026-10-09T19:59:59Z coin=BTCUSDT feed=okx",
   "2026-10-09T20:30:23Z HOLD coin=BTCUSDT price=82297.6 entry=82677.4 stop=85984.496 anchor=82747.1 fee=0.002648 unreal_usd=0.023806 trigger=2026-10-09T17:59:59Z open_rows=1 open_total=1 feed=okx http=200",
   "2026-10-09T20:30:26Z OPENED coin=ETHUSDT price=2476.45 fee=0.002648 slip=0.000662 stop=2575.508 anchor=2491.98 risk_usd=0.26480043 notional_usd=6.62001068 trigger=2026-10-09T19:59:59Z source=https://www.okx.com/api/v5/market/candles?instId=ETH-USDT-SWAP&bar=1H&limit=100 feed=okx http=200",
   "2026-10-09T20:30:29Z NO_TRADE coin=SOLUSDT price=108.44 reason=C1_did_not_close_down closed=99 feed=okx http=200",
@@ -208,6 +205,9 @@
   "2026-10-09T23:22:48Z CLOSED coin=BTCUSDT decision=CLOSED_FLIP price=82586.1 entry=82677.4 candle=2026-10-09T22:00:00Z fee=0.00264508 slip=0.00066127 fee_total=0.00529308 slip_total=0.00132327 net_usd=0.00069408 r=0.00262113 why=1H_bullish_flip_closed_82586.1_in_net_profit feed=okx http=200",
   "2026-10-09T23:22:48Z NO_TRADE coin=BTCUSDT price=82586.1 reason=C1_did_not_close_down closed=99 feed=okx http=200",
   "2026-10-09T23:22:51Z HOLD coin=ETHUSDT price=2487.89 entry=2476.45 stop=2575.508 anchor=2491.98 fee=0.002648 unreal_usd=-0.037217 trigger=2026-10-09T19:59:59Z open_rows=1 open_total=1 feed=okx http=200",
-  "2026-10-09T23:22:54Z NO_TRADE coin=SOLUSDT price=109.15 reason=C1_did_not_close_down closed=99 feed=okx http=200"
+  "2026-10-09T23:22:54Z NO_TRADE coin=SOLUSDT price=109.15 reason=C1_did_not_close_down closed=99 feed=okx http=200",
+  "2026-10-09T23:49:47Z NO_TRADE coin=BTCUSDT price=82586.1 reason=C1_did_not_close_down closed=99 feed=okx http=200",
+  "2026-10-09T23:49:51Z HOLD coin=ETHUSDT price=2487.89 entry=2476.45 stop=2575.508 anchor=2491.98 fee=0.002648 unreal_usd=-0.037217 trigger=2026-10-09T19:59:59Z open_rows=1 open_total=1 feed=okx http=200",
+  "2026-10-09T23:49:54Z NO_TRADE coin=SOLUSDT price=109.15 reason=C1_did_not_close_down closed=99 feed=okx http=200"
  ]
 }
