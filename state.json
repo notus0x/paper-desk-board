@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T17:10:42Z",
+ "generated_at": "2026-10-09T17:32:44Z",
  "mode": "PAPER ONLY - no exchange key, no live orders",
  "rules": {
   "timeframe": "1H",
@@ -24,22 +24,22 @@
  },
  "prices": {
   "BTCUSDT": {
-   "price": 82620.0,
+   "price": 82618.2,
    "candle_open": "2026-10-09T17:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-09T17:10:34Z"
+   "fetched_at": "2026-10-09T17:32:35Z"
   },
   "ETHUSDT": {
-   "price": 2486.4,
+   "price": 2485.11,
    "candle_open": "2026-10-09T17:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-09T17:10:37Z"
+   "fetched_at": "2026-10-09T17:32:38Z"
   },
   "SOLUSDT": {
-   "price": 109.56,
+   "price": 109.54,
    "candle_open": "2026-10-09T17:00:00Z",
    "confirmed": false,
-   "fetched_at": "2026-10-09T17:10:41Z"
+   "fetched_at": "2026-10-09T17:32:41Z"
   }
  },
  "open": [],
@@ -149,11 +149,8 @@
   },
   "verdict": "COLLECTING"
  },
- "last_run_at": "2026-10-09T17:10:41Z",
+ "last_run_at": "2026-10-09T17:32:41Z",
  "last_run_tail": [
-  "2026-10-09T13:05:35Z NO_TRADE coin=SOLUSDT price=110.4 reason=C2_did_not_close_below_the_C1_close closed=99 feed=okx http=200",
-  "2026-10-09T13:49:38Z NO_TRADE coin=BTCUSDT price=82995.6 reason=C2_did_not_close_below_the_C1_close closed=99 feed=okx http=200",
-  "2026-10-09T13:49:41Z NO_TRADE coin=ETHUSDT price=2496.88 reason=C2_did_not_close_below_the_C1_close closed=99 feed=okx http=200",
   "2026-10-09T13:49:44Z NO_TRADE coin=SOLUSDT price=110.4 reason=C2_did_not_close_below_the_C1_close closed=99 feed=okx http=200",
   "2026-10-09T14:18:41Z NO_TRADE coin=BTCUSDT price=82587.4 reason=C1_did_not_close_down closed=99 feed=okx http=200",
   "2026-10-09T14:18:44Z NO_TRADE coin=ETHUSDT price=2482.74 reason=C1_did_not_close_down closed=99 feed=okx http=200",
@@ -175,6 +172,9 @@
   "2026-10-09T16:40:39Z NO_TRADE coin=SOLUSDT price=109.64 reason=C2_did_not_close_below_the_C1_close closed=99 feed=okx http=200",
   "2026-10-09T17:10:34Z NO_TRADE coin=BTCUSDT price=82707.8 reason=C1_did_not_close_down closed=99 feed=okx http=200",
   "2026-10-09T17:10:37Z NO_TRADE coin=ETHUSDT price=2490.1 reason=C1_did_not_close_down closed=99 feed=okx http=200",
-  "2026-10-09T17:10:41Z NO_TRADE coin=SOLUSDT price=109.73 reason=C1_did_not_close_down closed=99 feed=okx http=200"
+  "2026-10-09T17:10:41Z NO_TRADE coin=SOLUSDT price=109.73 reason=C1_did_not_close_down closed=99 feed=okx http=200",
+  "2026-10-09T17:32:35Z NO_TRADE coin=BTCUSDT price=82707.8 reason=C1_did_not_close_down closed=99 feed=okx http=200",
+  "2026-10-09T17:32:38Z NO_TRADE coin=ETHUSDT price=2490.1 reason=C1_did_not_close_down closed=99 feed=okx http=200",
+  "2026-10-09T17:32:41Z NO_TRADE coin=SOLUSDT price=109.73 reason=C1_did_not_close_down closed=99 feed=okx http=200"
  ]
 }
