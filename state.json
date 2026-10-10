@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-10T19:20:54Z",
+ "generated_at": "2026-10-10T19:28:32Z",
  "mode": "PAPER ONLY - no exchange key, no live orders",
  "rules": {
   "timeframe": "1H",
@@ -15,12 +15,12 @@
  },
  "account": {
   "start_usd": 25.0,
-  "cash_usd": 26.42554748,
-  "equity_usd": 26.388273866467184,
-  "unreal_usd": -0.03727361353281554,
-  "fees_paid_usd": 0.09172199,
-  "fees_closed_usd": 0.0884188,
-  "fees_open_usd": 0.00330319
+  "cash_usd": 26.38887518,
+  "equity_usd": 26.38887518,
+  "unreal_usd": 0.0,
+  "fees_paid_usd": 0.09504021,
+  "fees_closed_usd": 0.09504021,
+  "fees_open_usd": 0.0
  },
  "prices": {
   "BTCUSDT": {
@@ -42,27 +42,7 @@
    "fetched_at": "2026-10-10T19:20:52Z"
   }
  },
- "open": [
-  {
-   "coin": "SOLUSDT",
-   "side": "short",
-   "entry": 109.92,
-   "trigger": "2026-10-10T17:59:59Z",
-   "stop": 114.3168,
-   "anchor": 110.64,
-   "risk_usd": 0.26425547,
-   "notional_usd": 6.60638687,
-   "entry_fee": 0.00264255,
-   "entry_slip": 0.00066064,
-   "last_price": 110.43,
-   "unreal_usd": -0.03727361353281554,
-   "unreal_r": -0.14105143606985898,
-   "held_hours": 1.348645578342014,
-   "stale": false,
-   "exit_rules": "v2",
-   "checked": "2026-10-10T18:59:59Z"
-  }
- ],
+ "open": [],
  "closed": [
   {
    "coin": "BTCUSDT",
@@ -159,17 +139,29 @@
    "net_usd": -0.05518933,
    "decision": "CLOSED_RULE",
    "exit_candle": "2026-10-10T01:00:00Z"
+  },
+  {
+   "coin": "SOLUSDT",
+   "trigger": "2026-10-10T17:59:59Z",
+   "entry": 109.92,
+   "exit": 110.42,
+   "fee": 0.00529713,
+   "slip": 0.00132428,
+   "r": -0.13877592,
+   "net_usd": -0.0366723,
+   "decision": "MANUAL_STOP_USER",
+   "exit_candle": null
   }
  ],
  "audit": {
-  "trades": 8,
+  "trades": 9,
   "wins": 6,
-  "losses": 2,
-  "win_rate": 0.75,
-  "expectancy_r": 0.70878225,
-  "net_r": 5.670258,
-  "net_usd": 1.4255474799999999,
-  "max_dd": 0.005811879263078619,
+  "losses": 3,
+  "win_rate": 0.6666666666666666,
+  "expectancy_r": 0.61460912,
+  "net_r": 5.53148208,
+  "net_usd": 1.3888751799999999,
+  "max_dd": 0.007191573100933589,
   "equity_curve": [
    25.0,
    25.099628,
@@ -179,7 +171,8 @@
    26.580027,
    26.480043,
    26.480737,
-   26.425547
+   26.425547,
+   26.388875
   ],
   "gate": {
    "trades": 40,
